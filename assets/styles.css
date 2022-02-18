@@ -11,14 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    width: 80%;
-}
-
-aside {
-    width: 20%;
-}
-
 a {
     text-decoration: none;
 }
@@ -181,7 +173,66 @@ nav ul li a:hover{
     border: none;
 }
 
+/* About Us */
 .about-us {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.about-us-item {
+    overflow: auto;
+}
+
+.about-us h6{
+    color: #363431;
+    margin-bottom: 30px;
+}
+
+.about-us h2 {
+    margin-bottom: 15px;
+}
+
+.heading-about-us {
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    line-height: 1.5;
+}
+
+/* Aside */
+aside {
+    width: 15%;
+    float: right;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+    background: #16697A;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+    margin: 1px 20px;
+}
+
+aside img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     text-align: center;
 }
 
+.aside table tr{
+    text-align: unset;
+}
+
+.social-icon {
+    margin: 15px auto;
+}
+
+.social-icon a{
+    padding: 10px;
+}
+
+td p {
+    text-align: left;
+}
