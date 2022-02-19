@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body {
@@ -28,13 +29,14 @@ nav .nav-item{
 nav {
     color: #ffffff;
     align-items: center;
+    border-bottom: 1px #ffffff solid;
     
     /* justify-content: space-around; */
 }
 
 .nav-left .logo-img img {
     width: 45px;
-    padding: 20px 0;
+    padding: 15px 0 10px 0;
 }
 
 .nav-left {
@@ -70,7 +72,7 @@ nav ul li::after{
     width: 0;
     background: #DB6400;
     position: absolute;
-    bottom: -10px;
+    bottom: -29.7px;
     left: 0;
     transition: 0.5s;
 
@@ -176,7 +178,8 @@ nav ul li a:hover{
 /* About Us */
 .about-us {
     text-align: center;
-    margin: 50px 20px;
+    padding: 150px;
+    padding-top: 100px;
 }
 
 .about-us-item {
@@ -205,13 +208,13 @@ aside {
     width: 15%;
     float: right;
     text-align: center;
-    color: #ffffff;
+    color: #363431;
     padding: 20px;
     position: relative;
-    background: #16697A;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
     margin: 1px 20px;
+    margin-left: 50px;
 }
 
 aside img {
@@ -236,3 +239,267 @@ aside img {
 td p {
     text-align: left;
 }
+/* Services we offer */
+.services-we-offer {
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(rgba(22, 105, 122,0.75), rgba(22, 105, 122,0.75)), url(./images/worldMap.png);
+}
+
+.services-we-offer h5{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+/* .services-item {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: center;
+    color: #ffffff;
+}
+
+.services-item::-webkit-scrollbar {
+    display: none;
+}
+
+.services-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 300px;
+    margin-right: 40px;
+    border: 2px solid #16697A;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.services-card:hover {
+    box-shadow: 0px 0px 10px #363431;
+} */
+
+.pre-btn, .nxt-btn {
+    border: none;
+    background: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 8;
+    box-shadow: 5px black;
+}
+
+.pre-btn {
+    left: 30px;
+    transform: rotate(90deg);
+}
+
+.nxt-btn {
+    right: 30px;
+    transform: rotate(270deg);
+}
+
+.pre-btn img, .nxt-btn img {
+    opacity: 0.5;
+    height: 50px;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+.services-item {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: center;
+    color: #ffffff;
+    /* position : relative;
+    width : 1100px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    padding : 30px;
+    overflow-x: auto; */
+}
+
+.services-item::-webkit-scrollbar {
+    display: none;
+}
+
+.services-item .services-card {
+    position: relative;
+    max-width : 300px;
+    height : 225px;  
+    border: 3px solid #DB6400;
+    padding : 30px 10px;
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+}
+
+.services-card {
+    flex: 0 0 auto;
+    margin-right: 30px;
+}
+
+
+.services-item .services-card:hover {
+    height : 320px;  
+}
+
+.services-item .services-card .image-title {
+    text-align: center;
+    align-items: center ;
+    margin-top: 60px;
+    transition : 0.3s ease-in-out;
+}
+
+.services-item .services-card:hover .image-title {
+    margin-top: 10px;
+    transition-delay: 0.3s;
+}
+.services-item .services-card .image-title:hover {
+    margin-top: 10px;
+    transition-delay: 0.3s;
+}
+
+.services-item .services-card .image-title span {
+    max-width: 100%;
+}
+
+.services-item .services-card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    text-align : center; 
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+}
+
+
+.services-item .services-card:hover .content {
+    margin-top : 150px;
+    visibility : visible;
+    opacity : 1;
+    transition-delay: 0.3s;
+} 
+
+/* TESTIMONIALS */
+/* .testimonials {
+    min-height: 100vh;
+    float: left;
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(rgba(22, 105, 122,0.9), rgba(22, 105, 122,0.9)), url(./images/worldMap.png);
+    padding: 50px;
+}
+
+.testimonials .title h1 {
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 40px;
+}
+
+.testimonials .slider {
+    background-color: rgba(248, 241, 241, 0.5);
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.testimonials .slider .slide {
+    display: none;
+}
+
+.testimonials .slider .slide.active{
+    display: block;
+    animation: slide 1s ease;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+
+.testimonials .slider p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.testimonials .slider .client-info h3 {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px 0 10px;
+}
+
+.testimonials .slider .client-info span {
+    display: block;
+    font-size: 16px;
+    color: #DB6400;
+    font-weight: bold;
+}
+
+.testimonials .slider-indicator {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.testimonials .slider-indicator img {
+    max-height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+    opacity: 0.2;
+    border: 8px solid #ffffff;
+}
+
+.testimonials .slider-indicator img.active {
+    animation: slideimg 1s ease-in-out;
+    max-height: 110px;
+}
+
+@keyframes slideimg {
+    0%{
+        max-height: 80px;
+    }
+
+    25%{
+        max-height: 100px;
+    }
+
+    100%{
+        max-height: 110px;
+    }
+}
+
+.testimonials .slider-indicator img.active {
+    opacity: 1;
+} */
+
