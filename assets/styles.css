@@ -236,9 +236,20 @@ font-family: 'Roboto', sans-serif; */
 .about-us p {
     line-height: 1.5;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
+}
+aside h4{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+}
+
+table {
+    margin: auto;
+}
+td {
+    padding: 4px;
 }
 
 /* Aside */
@@ -261,10 +272,6 @@ aside img {
     text-align: center;
 }
 
-.aside table tr{
-    text-align: unset;
-}
-
 .social-icon {
     margin: 15px auto;
 }
@@ -273,9 +280,7 @@ aside img {
     padding: 10px;
 }
 
-td p {
-    text-align: left;
-}
+
 /* Services we offer */
 .services-we-offer {
     position: relative;
@@ -766,6 +771,10 @@ footer {
         }
     }
 
+    /* Banner */
+    .introducingBanner h1 {
+        font-size: 30px;
+    }
 
     /* About us */
     .about-us {
