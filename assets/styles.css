@@ -147,7 +147,7 @@ nav ul li a:hover{
     margin-top: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 30px;padding: 4px;
 }
 
 .introducingBanner button {
@@ -571,7 +571,7 @@ aside img {
 /* FOOTER */
 footer {
     position: relative;
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 
 
