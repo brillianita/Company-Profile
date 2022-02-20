@@ -196,10 +196,6 @@ nav ul li a:hover{
     justify-content: space-between;
 }
 
-.about-us-item-1{
-    margin-right: 10px;
-}
-
 .about-us h6{
     color: #363431;
     margin-bottom: 30px;
@@ -251,7 +247,7 @@ aside {
     position: relative;
     border-radius: 15px;
     border: 2px solid #DB6400;
-    margin: auto;
+    margin-left: 50px;
 }
 
 aside img {
@@ -565,20 +561,23 @@ td p {
 
 /* FOOTER */
 footer {
-    position: relative;
-    margin: 40px 0;
+    margin: 70px;
+    padding: 0;
 }
 
-
 .footer {
-    display: flex;
-    margin: auto;
-    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    margin-right: auto !important;
+}
+
+.clear {
+    clear: left;
 }
 
 .footer-item {
-    margin-right: 40px;
-    width: 300px;
+    margin-right: 100px;
 }
 
 .ht-footer{
@@ -668,33 +667,11 @@ footer {
 }
 
 
-@media screen and (max-width: 1280px) {
-    .about-us-item article {
-        width: 60%;
-    }
-}
 
-@media screen and (max-width: 900px) {
-    .about-us-item {
-        align-items: center;
-    }
-    .about-us-item aside{
-        float: none;
-        width: 80%;
-    }
-
-    .about-us article {
-        float: none;
-        width: 80%;
-        margin: auto !important;
-        margin-top: 40px !important;
-    }
-
-    .about-us article h2, .about-us article p {
-        text-align: center;
-    }
-}
 @media screen and (max-width: 670px) {
+    nav {
+        
+    }
     .toggle-button{
         display: flex;
     }
@@ -777,13 +754,5 @@ footer {
 
     aside {
         width: 100%;
-    }
-
-    /* footer */
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin: unset !important;
     }
 }
