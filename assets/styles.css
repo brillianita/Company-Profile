@@ -33,6 +33,7 @@ nav {
     color: #ffffff;
     align-items: center;
     border-bottom: 1px #ffffff solid;
+    position: relative;
 }
 
 .nav-left .logo-img img {
@@ -97,33 +98,24 @@ nav ul li a:hover{
 }
 
 
-.menu-toggle {
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
     display: none;
     flex-direction: column;
-    height: 20px;
     justify-content: space-between;
-    position: relative;
+    width: 30px;
+    height: 21px;
 }
 
-.menu-toggle input {
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    left: -6px;
-    top: -3px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.menu-toggle span {
+.toggle-button .bar {
     display: block;
     width: 28px;
     height: 3px;
     background-color: #ffffff;
     margin-right: 30px;
 }
-
 /* Jumbotron */
 .banner {
     width: 100%;
@@ -195,7 +187,6 @@ nav ul li a:hover{
 
 /* About Us */
 .about-us {
-    padding-top: 100px;
     padding: 100px;
 }
 
@@ -669,30 +660,86 @@ footer {
 
 
 @media screen and (max-width: 670px) {
-    /* Navbar */
-    nav ul {
-        position: absolute;
-        top: 0;
-        right: 0;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 50vh;
-        width: 100%;
-        z-index: 1;
-        background-color: #2f8f8c;
-        transform: translateY(0);
-        transition: all 1s;
-    } 
-
-    nav ul.slide {
-        transform: translateY(-100%);
-        z-index: 0;
+    nav {
+        
     }
-
-    .menu-toggle {
+    .toggle-button{
         display: flex;
-        z-index: 2;
     }
 
+    .nav-item {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        align-items: flex-start !important;
+        display: unset !important;
+    }
+    .nav-right {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-right ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-right li {
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+
+    .nav-right.active{
+        display: flex !important;
+        margin-bottom: 30px;
+    }
+
+    a.active{
+        width: fit-content;
+    }
+
+    .navbar.active{
+        animation: navbar 1s ease;
+        background-color: rgba(10, 26, 51, 1);
+        z-index: 8;
+        border-bottom: #DB6400;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    nav ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: none;
+        position: absolute;
+        bottom: -29.7px;
+        left: 0;
+        transition: 0.5s;
+    
+    }
+
+    @keyframes navbar{
+        0%{
+            opacity: 0;
+            transform: translateY(20px,10px);
+        }
+    
+        100%{
+            opacity: 1;
+            transform: translateY(20px,20px);
+        }
+    }
+
+    .about-us-item {
+        padding: 10px !important;
+    }
+
+    /* aside */
+    aside {
+        width: 100%;
+    }
 }

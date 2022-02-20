@@ -25,11 +25,13 @@
 // }
 
 // Navbar
-const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
+const menuToggle = document.getElementsByClassName('toggle-button')[0];
+const nav = document.getElementsByClassName('nav-right')[0];
+const navbar = document.getElementsByClassName('navbar')[0];
 
 menuToggle.addEventListener('click', function() {
-    nav.classList.toggle('slide');
+    nav.classList.toggle('active');
+    navbar.classList.toggle('active')
 })
 
 //Services We Offer
