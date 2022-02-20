@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poppins:wght@200&family=Roboto&family=Roboto+Slab&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 a {
@@ -30,8 +33,6 @@ nav {
     color: #ffffff;
     align-items: center;
     border-bottom: 1px #ffffff solid;
-    
-    /* justify-content: space-around; */
 }
 
 .nav-left .logo-img img {
@@ -46,8 +47,9 @@ nav {
 
 .nav-left h3 {
     align-items: center;
-    padding-top: 30px;
+    padding-top: 25px;
     padding-left: 10px;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .nav-right {
@@ -64,6 +66,10 @@ nav ul li {
     position: relative;
     display: inline-block;
     margin: 0 20px;
+}
+
+nav ul li a{
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 nav ul li::after{
@@ -137,8 +143,19 @@ nav ul li a:hover{
 }
 .introducingBanner h1 {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 80px;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.introducingBanner p {
+    color: #ffffff;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
 }
 
 .introducingBanner button {
@@ -153,6 +170,7 @@ nav ul li a:hover{
     color: #ffffff;
     cursor: pointer;
     position: relative;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .introducingBanner button span {
@@ -177,22 +195,34 @@ nav ul li a:hover{
 
 /* About Us */
 .about-us {
-    text-align: center;
-    padding: 150px;
     padding-top: 100px;
+    padding: 100px;
 }
 
 .about-us-item {
     overflow: auto;
+    margin-top: 60px;
+    text-align: center;
 }
 
 .about-us h6{
     color: #363431;
     margin-bottom: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom: 3px solid #16697A;
+    padding-bottom: 15px;
+    width: fit-content;
+    margin: auto;
 }
 
 .about-us h2 {
     margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Roboto Slab', sans-serif;
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
 }
 
 .heading-about-us {
@@ -201,6 +231,9 @@ nav ul li a:hover{
 
 .about-us p {
     line-height: 1.5;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Aside */
@@ -247,13 +280,24 @@ td p {
     padding-top: 40px;
     padding-bottom: 40px;
     background: linear-gradient(rgba(22, 105, 122,0.75), rgba(22, 105, 122,0.75)), url(./images/worldMap.png);
+    align-items: center;
+    text-align: center;
 }
 
 .services-we-offer h5{
-    padding: 0 10vw;
+    /* padding: 0 10vw;
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 40px; */
+    color: #ffffff;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom: 5px solid #DB6400;
+    padding-bottom: 15px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 /* .services-item {
@@ -366,6 +410,10 @@ td p {
     transition : 0.3s ease-in-out;
 }
 
+.services-item .services-card .image-title h3{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
 .services-item .services-card:hover .image-title {
     margin-top: 10px;
     transition-delay: 0.3s;
@@ -387,6 +435,13 @@ td p {
     visibility : hidden;
     opacity : 0;
     transition : 0.3s ease-in-out;
+}
+
+.services-item .services-card .content p{
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -503,3 +558,141 @@ td p {
     opacity: 1;
 } */
 
+
+/* FOOTER */
+footer {
+    margin: 70px;
+    padding: 0;
+}
+
+.footer {
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    margin-right: auto !important;
+}
+
+.clear {
+    clear: left;
+}
+
+.footer-item {
+    margin-right: 100px;
+}
+
+.ht-footer{
+    float: left;
+}
+
+.ht-footer .logo-footer .logo-img img {
+    width: 45px;
+    padding: 15px 0 10px 0;
+}
+
+.ht-footer .logo-footer{
+    display: flex;
+}
+
+.ht-footer .logo-footer h5{
+    font-size: 20px;
+    align-items: center;
+    padding-top: 27px;
+    padding-left: 10px;
+    color: #DB6400;
+}
+
+.footer-item h5{
+    margin-bottom: 20px;
+    color: #DB6400;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.contact-us {
+    float: left;
+}
+
+
+.contact-us-elem {
+    margin-bottom: 20px;
+    display: inline;
+}
+.contact-us-elem span {
+    margin-right: 10px;
+    display: inline;
+}
+
+.contact-us-item .contact-us-elem p{
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.what-we-offer-footer {
+    float: left;
+}
+
+.what-we-offer-footer-item p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.quick-links {
+    float: left;
+}
+
+.quick-links-item a{
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.footer-text p{
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.footer-text {
+    border-top: 2px solid #DB6400;
+}
+
+
+
+@media screen and (max-width: 670px) {
+    /* Navbar */
+    nav ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        z-index: 1;
+        background-color: #2f8f8c;
+        transform: translateY(0);
+        transition: all 1s;
+    } 
+
+    nav ul.slide {
+        transform: translateY(-100%);
+        z-index: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        z-index: 2;
+    }
+
+}
