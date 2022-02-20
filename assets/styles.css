@@ -735,6 +735,10 @@ footer {
         top: 30px;
     }
 
+    .toggle-button:hover{
+        cursor: pointer;
+    }
+
     .nav-item {
         width: 100%;
         margin-left: 0;
